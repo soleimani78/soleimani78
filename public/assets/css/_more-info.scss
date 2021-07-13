@@ -1,0 +1,31 @@
+@import "./const-file";
+
+div.more-info{
+    display: flex;
+    @include margine(100px,auto,0,auto);
+    div.more-info-content{
+        flex: 70%;
+        @include margine(0,50px,0,50px);
+        img{
+            @include border-radius(10px,10px,10px,10px);
+            @include border(1px,solid,rgba(0,0,0,.5));
+        }
+        p{
+            line-height: 30px;
+            text-align: justify !important;
+        }
+    }
+    div.more-info-news{
+        display: flex;
+        flex-direction: column;
+        flex: 30%;
+        div.news{
+            width: 350px;
+            height: 260px;
+            @include margine(0,0,20px,0);
+            img{
+                @include border-radius(10px,10px,10px,10px);
+            }
+        }
+    }
+}

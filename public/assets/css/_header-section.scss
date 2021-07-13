@@ -1,0 +1,73 @@
+@import "./const-file";
+
+// Header //
+div.header{
+    display: flex;
+    position: relative;
+    div.header-right{
+        div.gtco-main-nav{
+            &::after{
+                content: "";
+                position: absolute;
+                width: 1000px;
+                height: 700px;
+                background-image: linear-gradient(-220deg,$color_linear1_first,$color_linear1_second);
+                z-index: -1;
+                @include border-radius(50%, 0,50% ,50% );
+                transform: translateX(35.5%) translateY(-610px);
+                -webkit-transform: translateX(35.5%) translateY(-610px);
+                -moz-transform: translateX(35.5%) translateY(-610px);
+                -ms-transform: translateX(35.5%) translateY(-610px);
+                -o-transform: translateX(35.5%) translateY(-610px);
+}
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 1030px;
+                height: 690px;
+                background-image: linear-gradient(to right,$color_linear2_first,$color_linear2_second);
+                z-index: -1;
+                @include border-radius(50%, 0,50% ,50% );
+                transform: translateX(32%) translateY(-170px);
+                -webkit-transform: translateX(32%) translateY(-170px);
+                -moz-transform: translateX(32%) translateY(-170px);
+                -ms-transform: translateX(32%) translateY(-170px);
+                -o-transform: translateX(32%) translateY(-170px);
+}
+            div.banner-image{
+                @include margine(60px,90px ,0 ,0 );
+            }
+        }
+    }
+
+    div.header-left{
+        @include margine(60px,100px ,0 ,0 );
+
+        div.site-title{
+            @include margine(100px, 80px, 59px,0);
+            h1{
+                color: $site_color_title;
+            }
+        }
+
+        div.site-sub-title{
+            color: #596275;
+        }
+
+        div.header-left-button{
+            text-align: left;
+            a.btn-content{
+             @include padding(6px,12px,6px,12px);
+             color: $color_a1_tag;
+             background-color: $color_btn_header;
+             text-decoration: none;
+             @include border-radius(20px, 20px, 20px, 20px);
+
+            &:hover{
+                background-color: $color_btn_header_hover;
+            }
+            }
+        }
+    }
+}

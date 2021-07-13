@@ -1,0 +1,76 @@
+// Break pointer //
+@media only screen and (max-width: 1314px) {
+    div.gtco-main-nav{
+        display: none;
+    }
+    div.more-info{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1306px) {
+    div.header{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1252px) {
+    div.target{
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.target img{
+        margin-top: 50px;
+    }
+    div.target-aims{
+        display: none;
+    }
+    div.services-part{
+        flex-direction: column;
+    }
+    div.statistic{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    div.navbar{
+        display: none;
+    }
+    div.navbar-responsive{
+        display: block;
+        width: 100%;
+    }
+    div.footer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    div.footer{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.statistic i{
+        font-size: 43px;
+    }
+}
+
+@media only screen and (max-width: 824px){
+    div.cards{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .login-box{
+        width: auto;
+    }
+    .signup-box{
+        width: auto;
+    }
+}

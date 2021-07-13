@@ -1,0 +1,104 @@
+// define mixin
+@mixin margine($m_top ,$m_right ,$m_botton ,$m_left) {
+    margin: $m_top $m_right $m_botton $m_left;
+}
+@mixin padding ($p_top ,$p_right ,$p_bottom ,$p_left){
+    padding: $p_top $p_right $p_bottom $p_left; 
+}
+@mixin border-radius($b_t_right, $b_t_left, $b_b_left, $b_b_right) {
+    border-radius: $b_t_right $b_t_left $b_b_left $b_b_right;
+    -webkit-border-radius: $b_t_right $b_t_left $b_b_left $b_b_right;
+    -moz-border-radius: $b_t_right $b_t_left $b_b_left $b_b_right;
+    -ms-border-radius: $b_t_right $b_t_left $b_b_left $b_b_right;
+    -o-border-radius: $b_t_right $b_t_left $b_b_left $b_b_right;
+}
+@mixin transform($value) {
+    transform: $value;
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+}
+@mixin filter($position) {
+    filter: $position;
+    -webkit-filter: $position;
+}
+@mixin border($num ,$style ,$color) {
+    border: $num $style $color;
+}
+@mixin transition($style ,$time ,$format) {
+    transition: $style $time $format;
+    -webkit-transition: $style $time $format;
+    -moz-transition: $style $time $format;
+    -ms-transition: $style $time $format;
+    -o-transition: $style $time $format;
+}
+
+// const
+*,button,input,body{
+	font-family: IRANSans;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1280px;
+    height: auto;
+}
+
+.container-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.space-part{
+    margin-top: 250px;
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.d-none{
+    display: none;
+}
+
+.login-show{
+    display: flex;
+}
+
+.stop-scrolling{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+// define variable
+$color_a1_tag: #fff;
+$color_a2_tag: #000;
+$color_a3_tag: #333333;
+$color_btn_navbar: #f19066;
+$color_btn_navbar_hover: #e77f67;
+$color_linear1_first: #1d3ede;
+$color_linear1_second: #01e6f8;
+$color_linear2_first: #e8eefc;
+$color_linear2_second: #e6fafe;
+$color_btn_header: #778beb;
+$color_btn_header_hover: #546de5;
+$site_color_title: #7b7676;
+$color_behind_img_target:#efefef;
+$color_span_date: #3939d3;
+$color_p_service: #3d3d3d;
+$background_services1: #90b4ff;
+$background_services2: #bad0f9;
+$color_a_footer: #7d7c7c;
+$color_hover_footer: #484848;
+$color_border_footer: #686de6;
+$color_team_title: #8bc34a;
+$color_team_sub_title: #e22828;
+$color_close_login: #ff6b6b;
+$background_color_login_input: #e5e5e5;
+$background_color_login_button: #38ca6f;
+$background_color_login_button_hover: #32b864;
+$background_color_icon_search: #e67e22;

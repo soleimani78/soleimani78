@@ -1,0 +1,45 @@
+@import "./const-file";
+
+// Servicses //
+div.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,$background_services1,$background_services2);
+    div.services-title{
+        font-size: 26px;
+        font-weight: bold;
+        @include margine(30px, 0, 30px, 0);
+    }
+    div.services-part{
+        display: flex;
+        justify-content: center;
+        @include margine(0, 0, 60px, 0);
+        div.service-card{
+            display: flex;
+            flex-direction: column;
+            background-color: $color_a1_tag;
+            width: 280px;
+            height: 360px;
+            cursor: pointer;
+            @include margine(30px, 15px,0 ,15px );
+            @include padding(10px, 20px, 10px, 20px);
+            @include border-radius(20px,20px ,20px ,20px );
+            @include transition(all,.5s ,ease-in-out );
+            &:hover{
+                @include transform(translateY(-10px));
+            }
+            img{
+                width: 250px;
+                height: 250px;
+                @include border-radius(50%, 50%, 50%, 50%);
+            }
+            p{
+                text-align: justify;
+                line-height: 25px;
+                color: $color_p_service;
+            }
+        }
+    }
+}

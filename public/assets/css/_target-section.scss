@@ -1,0 +1,50 @@
+@import "./const-file";
+
+// Target //
+div.target{
+    display: flex;
+    justify-content: center;
+        div.target-content{
+            @include margine(50px, 70px,0 ,70px );
+            p{
+                color: $color_a3_tag;
+                text-align: justify ;
+            }
+            div.target-content-button{
+                text-align: left;
+                a{
+                 @include padding(6px,12px,6px,12px);
+                 color: $color_a1_tag;
+                 background-color: $color_btn_navbar;
+                 text-decoration: none;
+                 @include border-radius(20px, 20px, 20px, 20px);
+
+                 &:hover{
+                    background-color: $color_btn_navbar_hover;
+                 }
+                }
+            }
+        }
+        div.target-aim{
+            position: relative;
+            @include margine(0,70px ,0 , 70px);
+            div.target-aim-imge{
+                img.target-img{
+                  @include border-radius(15px, 100px,15px ,200px );  
+                  @include transform(rotate(10deg));
+                  @include filter(blur(0.5px));
+                  @include border(1px,solid ,$color_behind_img_target );
+                }
+            }
+            div.target-aims{
+                position: absolute;
+                top: 0%;
+                width: 90%;
+                height: 350px;
+                background-color: $color_behind_img_target;
+                @include transform(rotate(8deg));
+                @include border-radius(15px,100px ,15px ,200px );   
+                z-index: -1;
+            }
+        }
+} 
